@@ -20,6 +20,6 @@ public class ExemploControllerTest {
 
     @Test
     public void shouldGetMessage() throws Exception {
-        mockMvc.perform(get("/exemplo")).andExpect(status().is5xxServerError());
+        mockMvc.perform(get("/exemplo")).andExpect(status().isOk());
     }
 }
